@@ -7,6 +7,7 @@
 <body>
     <?php
         extract ($_POST);
+        echo "<br>A summary of your order has been sent to your email!";
         echo "<p id='result'> </p>";
         echo "<script type='text/javascript'>".
             "document.getElementByID('result').innerText = showTime();".

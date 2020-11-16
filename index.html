@@ -55,8 +55,8 @@ function showTime(){
 			res += new Date(d.getTime() + 15*60*1000).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
 		}
 
-		//myWindow.document.write(res);
-        return res;
+		myWindow.document.write(res);
+        //return res;
 	}
 }
 
@@ -147,7 +147,7 @@ $(function() {
 <!-- Below is given HTML-->
 
 <h1>Jade Delight</h1>
-<form>
+<form method = "post" action = "php_process.php">
 
 <p>First Name: <input type="text"  name='fname' /></p>
 <p>Last Name*:  <input type="text"  name='lname' /></p>
