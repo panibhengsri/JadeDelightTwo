@@ -36,7 +36,7 @@ function showTime(){
 	if ($("form").valid()){
 		var myWindow = window.open("", "Order Information");
 		var d = new Date();
-		var res = "Thnak you for ordering with Jade Delight! <br>"; 
+		var res = "Thank you for ordering with Jade Delight! <br>"; 
 		
 		res += "<br><br> ~~Your Order~~ <br>";
 		for (i = 0; i < menuItems.length; i++){
@@ -55,7 +55,8 @@ function showTime(){
 			res += new Date(d.getTime() + 15*60*1000).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
 		}
 
-		myWindow.document.write(res);
+		//myWindow.document.write(res);
+        return res;
 	}
 }
 
@@ -151,6 +152,7 @@ $(function() {
 <p>First Name: <input type="text"  name='fname' /></p>
 <p>Last Name*:  <input type="text"  name='lname' /></p>
 <p>Phone*: <input type="text"  name='phone' /></p>
+<p>Email*: <input type="text"  name='email' /></p>
 
 <p> 
 	<input type="radio"  name="p_or_d" value = "pickup" />Pickup  
